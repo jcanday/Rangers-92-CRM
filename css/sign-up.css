@@ -1,0 +1,107 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    
+}
+ul{
+    padding-left:0;
+    margin-bottom:0;
+}
+li{
+    list-style:none;
+}
+span{
+    font-weight:bold;
+}
+h1{
+    font-weight:bolder;
+    font-size:3rem;
+}
+.page-wrapper{
+    height:100vh;
+}
+.page-wrapper > .container-fluid{
+    height:100%;
+    
+}
+.page-wrapper > .container-fluid > .row{
+    height:100%;
+}
+.col-lg-5{
+    justify-content: center;
+    gap:2rem;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    padding:3rem 0;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:3rem;
+}
+form input{
+    padding:1rem 4rem;
+    border-radius:75px;
+    border:1px solid #878787;
+    width:100%;
+}
+form input[type="submit"]{
+    background-color:blue;
+    color:white;
+    font-weight:bold;
+    width:auto;
+    transition:1s ease-in-out;
+}
+form input[type="submit"]:hover{
+    background-color:white;
+    border:1px solid blue;
+    color:blue;
+}
+.social-list{
+    font-size:2rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:4rem;
+    padding-top:2rem;   
+}
+.social-list li a{
+    color:black;
+    border:.5px solid #878787;
+    border-radius:50%;
+    padding:.5rem 1rem;
+}
+.input-box{
+    position:relative;
+}
+.input-box i{
+    position:absolute;
+    top:1.5rem;
+    left:5%;
+}
+.col-lg-7{
+    background-image:url(/images/CRM-SignUp/Group\ 10@2x.png);
+    background-size:75%;
+    background-position:5% 75%;
+    background-repeat:no-repeat;
+}
+@media screen and (max-width:991px){
+    .col-lg-5{
+        padding:6rem 0;
+    }
+    .col-lg-7{
+        margin-top:2rem;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        background-position:50% 50%;
+        background-size:contain;
+        min-height:30vh;
+    }
+    .social-list{
+        gap:2rem;
+    }
+}
