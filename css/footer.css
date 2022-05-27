@@ -1,0 +1,48 @@
+footer, .full-width{
+    width:100%;
+    background:#0651f8;
+    color: white;
+    text-align: center;
+    margin-top:50px;
+}
+
+.btn-1-color{
+    background-color: limegreen !important;
+    border:none;
+}
+
+.btn-2-color{
+    background-color: white !important;
+    border:none;
+    color: #0651f8 !important;
+}
+
+.grid-container{
+    padding-top:10px;
+    width:auto;
+}
+
+section{
+    width: 400px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#get-started-btn{
+    width: 150px;
+}
+
+svg{ /*chat bubble icon*/
+    padding-bottom: 3px;
+}
+
+.links{
+    padding-top:20px;
+    padding-bottom: 50px;
+}
+
+#ellipse{
+    height:5px;
+}
