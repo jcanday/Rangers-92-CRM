@@ -5,7 +5,6 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
     font-family: "Rubik"
 }
 
@@ -85,7 +84,7 @@ body{
 
 /* footer */
 
-footer, .full-width{
+footer{
     width:100%;
     background:#0651f8;
     color: white;
@@ -132,4 +131,13 @@ svg{ /*chat bubble icon*/
 
 #ellipse{
     height:5px;
+}
+nav{
+    width:100%;
+}
+.navbar .container-fluid{
+    width:100%;
+    border:none;
+    height:auto;
+    background-color:unset;
 }
