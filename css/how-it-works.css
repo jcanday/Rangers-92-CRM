@@ -1,85 +1,102 @@
 body{
     height:100%;
-    /* background-color:white; */
+    background-color:white;
+    text-align:center;
     display:flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Rubik", sans-serif
+    font-family: "Rubik"
 }
 
-/* nav */
-.nav-btn-color{
-    background-color: #0651f8;
-    color:white;
+/* begin nav bar */
+
+nav{
+    width:100%;
+}
+.navbar .container-fluid{
+    width:100%;
+    border:none;
+    height:auto;
+    background-color:unset;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.fa-solid.fa-compress {
+    position: relative;
+    top: 5px;
+}
+.nav-link {
+    color: #2e2e2e;
+    font-size: 13px
+}
+#signinbutton, #chatbutton {
+    border: 2px solid #0653f8;
+    border-radius: 10px;
+    background-color: white;
+    color: #0653f8;
+    padding: 5px 20px;
+}
+#tryfreebutton, #signupbutton {
+    border: 2px solid #0653f8;
+    border-radius: 10px;
+    background-color: #0653f8;
+    width: 100px;
+    color: white;
+    padding: 5px 10px;
+}
+#navbuttondiv {
+    margin-left: 30px;
+}
+
+/* end nav, begin header */
+
+#header-title{
+    text-align:left;
 }
 
 
-
-/* header */
-
-#header{
-    height: 600px;
-    padding:100px;
-    margin-bottom: 50px;
+.d-flex-column.leftside h1 {
+    font-size: 65px;
+    font-weight: 500;
 }
-
-#header-picture{
-    height: 500px;
-}
-
-.header-title{
-    /* copied from jordy */
-    font-size:65px;
-    font-weight:500;
-    /* changed the weight from 800 to 500 */
-}
-
-
-.header-text{
+.d-flex-column.leftside h2 {
     font-size: 35px;
     font-weight: 400;
 }
-
-.header-description{   
-    color: #9f9e9e
-}
-
-#header-box{
+#focusonsection {
     width: 90vw;
-    font-weight: 800;
+}
+#focusonsection .d-flex-column.leftside {
+    position: relative;
+
+}
+#focusonsection p {
+    font-weight: 500;
     color: #9a9a9a;
 }
-
-#signupbutton{
-    padding:10px;
-    width: 12vw;
-    margin: 20px 10px 20px;
-    font-size: 15px;
-    border-radius:10px;
-    color:white;
-    background-color:#0653f8;
-    border:1px solid #0653f8;
+#signupbutton, #chatbutton {
+    padding: 10px;
+    width: 15vw;
+    margin: 10px 10px 10px;
+    font-size: 18px;
 }
-
-#chatbutton{
-    padding:10px;
-    width: 12vw;
-    margin: 20px 10px 20px;
-    font-size: 15x;
-    border-radius:10px;
-    color: #0653f8;
-    border:  1px solid #0653f8;
-    background-color:white;
-}
-
 .signin2 {
-    font-weight: 800;
+    font-weight: 500;
     color: #9f9e9e;
 }
-
-.sign-in-link { 
-    text-decoration: none; 
+.signin2 a, .signin2 b {
     color: #848383;
+    text-decoration: none;
+}
+
+.header-links{
+        display:flex;
 }
 
 .benefitslist li {
@@ -87,23 +104,31 @@ body{
     font-size: 13px;
     margin-right: 20px
 }
-
-#header-small-links{
+.benefitslist span {
     color: black;
+
+}
+.col-sm-12, .col-sm-12 ul{
+    text-align: center;
+    justify-content: center;
 }
 
-li span{
-    color: #9f9e9e
+@media (min-width:576px) {
+  .navbar-nav {
+    display: block;
+    position: relative;
+    left: 50px;
+  }
+  #navbuttondiv {
+      position: relative;
+      left: 90px
+  }
 }
-
-/* col-lg-6 col-sm-12 */
-
-
-  /* end header */
-
-
-
-/* body */
+@media (min-width:992px) {
+    .navbar-nav {
+      display: flex;
+    }
+  }
 
 
 .first-title{
@@ -130,7 +155,7 @@ li span{
     display:flex;
 }
 
-/* body: content cards */
+/* end header , begin body: content cards */
 
 .container{
     background-color: #0651f8;
@@ -151,14 +176,14 @@ li span{
     height: 200px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 96px;
+    margin-bottom: 95px;
 }
 
 #text-image-2{
     height: 250px;
     padding-left: 55px;
     margin-right:30px;
-    margin-bottom:44.5px;
+    margin-bottom:45px;
 }
 
 #container-title{
@@ -175,11 +200,12 @@ li span{
     text-align:left;
 }
 
-/* end body */
+/* end body: content cards */
 
 
 
 /* footer */
+
 
 .try-today, .full-width{
     width:100%;
