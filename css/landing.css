@@ -381,3 +381,8 @@ main h3 {
 #footer-ellipse{
     height:5px;
 }
+a{text-decoration:none;}
+a:hover{
+    text-decoration:none;
+}
+#tryfreebutton a{color:white;}
