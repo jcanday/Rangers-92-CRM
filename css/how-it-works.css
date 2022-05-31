@@ -208,6 +208,7 @@ nav{
 
 
 .try-today, .full-width{
+footer{
     width:100%;
     background:#0651f8;
     color: white;
@@ -253,4 +254,13 @@ nav{
 
 #footer-ellipse{
     height:5px;
+}
+nav{
+    width:100%;
+}
+.navbar .container-fluid{
+    width:100%;
+    border:none;
+    height:auto;
+    background-color:unset;
 }
